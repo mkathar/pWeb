@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  &__img {
+    width: 370px;
+    height: 370px;
+  }
+  &__content {
+    &__ques {
+      font-family: $font-family-sans-serif;
+      color: $gray-600;
+    }
+    &__title {
+      color: $blue;
+    }
+    &__introduce {
+      font-family: $font-family-sans-serif;
+    }
+    &__btn {
+      width: 120px;
+      padding: 0.6rem 0;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      border: solid 1px;
+      justify-self: left;
+    }
+  }
+}

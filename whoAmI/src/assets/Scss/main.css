@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #695aa6;
+  color: white;
+}
+
+::selection {
+  background: #695aa6;
+  color: white;
+}
+
+.infos {
+  height: 100px;
+  padding-bottom: 20px;
+  color: #fff;
+  display: flex;
+  opacity: 0.8;
+  align-items: flex-end;
+}
+.infos * {
+  margin: 0;
+  padding: 0;
+}
+.infos .title,
+.infos .socials {
+  flex-grow: 1;
+}
+.infos .title .subtitle,
+.infos .socials .subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.infos .title .font-small {
+  color: #fff;
+  font-size: 13px;
+}
+.infos .subtitle {
+  margin: 2px;
+}
+.infos .subtitle i {
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.infos .social-links a {
+  font-size: 14px;
+  color: #fff;
+}
+.infos .social-links a:hover {
+  color: #695aa6;
+}
+
+/* contact section */
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  padding: 0 30px;
+}
+.list .list-head {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 6px;
+}
+.list .list-body {
+  padding-top: 6px;
+}
+.list .list-body p {
+  margin-bottom: 5px;
+}
+.list .list-body p i {
+  display: inline-block;
+  width: 20px;
+}
+.list .list-body a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+.list .list-body .social-links {
+  margin-top: 15px;
+}
+.list .list-body .social-links a {
+  display: inline;
+  padding: 0 8px 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: "Baloo Paaji", cursive;
+  color: #695aa6;
+}
+
+.my-font {
+  font-family: "Baloo Paaji", cursive;
+}
+
+p {
+  font-size: calc(13px + 2 * (100vw - 300px) / 1000);
+  font-weight: 100;
+  opacity: 1;
+  color: #111;
+  letter-spacing: 0.6px;
+}
+
+.xs-font {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: calc(15px + 5 * (100vw - 300px) / 1000);
+}
+.title.big {
+  font-size: calc(17px + 8 * (100vw - 300px) / 1000);
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.img-responsive {
+  width: 100% !important;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.about__img {
+  width: 370px;
+  height: 370px;
+}
+.about__content__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.about__content__title {
+  color: #1e549f;
+}
+.about__content__introduce {
+  font-family: "Open Sans", sans-serif;
+}
+.about__content__btn {
+  width: 120px;
+  padding: 0.6rem 0;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  border: solid 1px;
+  justify-self: left;
+}
+
+.portfolio {
+  text-align: center;
+}
+.portfolio__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.portfolio__title {
+  color: #1e549f;
+}
+.portfolio__group {
+  display: flex;
+  justify-content: space-around;
+  width: 68%;
+  margin: 0 auto;
+}
+.portfolio__group__item {
+  width: 350px;
+  height: 350px;
+}
+
+.primary {
+  background-image: url("src/assets/imgs/folio-1.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}
+
+.secondary {
+  background-image: url("src/assets/imgs/folio-2.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}
+
+.tertiary {
+  background-image: url("src/assets/imgs/folio-3.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header__title {
+  font-weight: 500;
+  font-family: "Baloo Paaji", cursive;
+  color: #fff;
+}
+.header__list {
+  display: flex;
+  list-style-type: none;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.header__list--item {
+  font-weight: 500;
+  font-family: "Baloo Paaji", cursive;
+  color: #fff;
+}
+
+.hero {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("src/assets/imgs/header.jpg");
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+.hero__up {
+  font-family: "Baloo Paaji", cursive;
+  font-weight: 700;
+  color: #495057;
+  font-size: calc(30px + 30 * (100vw - 300px) / 1000);
+}
+.hero__mid {
+  font-family: "Baloo Paaji", cursive;
+  font-weight: 700;
+  color: #393e46;
+  font-size: calc(30px + 30 * (100vw - 300px) / 1000);
+}
+.hero__bot {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: #393e46;
+  letter-spacing: calc(1px + 6 * (100vw - 300px) / 1000);
+  font-size: calc(10px + 12 * (100vw - 300px) / 1000);
+  margin-bottom: 3rem;
+}
+.hero__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 3px solid;
+}
+
+.service {
+  width: 70%;
+  margin: 3rem auto;
+  text-align: center;
+}
+.service__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.service__title {
+  color: #1e549f;
+}
+.service__group {
+  justify-content: space-around;
+  display: flex;
+}
+.service__group__item {
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+.service__group__item__text {
+  margin: 0.8rem 0;
+  font-family: "Open Sans", sans-serif;
+  color: #1e549f;
+  font-weight: 900;
+}
+.service__group__item:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  transform: translateY(-155px);
+  transition: 1.5s;
+}
+
+.prices {
+  margin-top: 5rem;
+  text-align: center;
+}
+.prices__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.prices__title {
+  color: #1e549f;
+}
+.prices__group {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.prices__group__content {
+  width: 370px;
+  border: 1px solid #ced4da;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+g .prices__group__content__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 3.3rem;
+}
+.prices__group__content__title {
+  color: #1e549f;
+  align-self: center;
+}
+.prices__group__content__item {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.prices__group__content__button {
+  padding: 0.7rem 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1e549f;
+  border-color: #1e549f;
+}
+
+.btn-secondary {
+  color: #1e549f;
+  background-color: #fff;
+  border-color: #1e549f;
+}
+
+.btn-tertiary {
+  color: #fff;
+  background-color: #1e549f;
+  border: none;
+}/*# sourceMappingURL=main.css.map */

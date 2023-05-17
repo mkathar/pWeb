@@ -1,0 +1,47 @@
+.hero {
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 80%,
+      rgba(255, 255, 255, 1) 90%
+    ),
+    url("src/assets/imgs/header.jpg");
+  height: fit-content;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+
+  &__up {
+    font-family: "Baloo Paaji", cursive;
+    font-weight: 700;
+    color: $gray-700;
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  }
+  &__mid {
+    font-family: "Baloo Paaji", cursive;
+    font-weight: 700;
+    color: $gray-800;
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  }
+
+  &__bot {
+    font-family: $font-family-sans-serif;
+    font-weight: 100;
+    color: $gray-800;
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 3rem;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: 3px solid;
+  }
+}

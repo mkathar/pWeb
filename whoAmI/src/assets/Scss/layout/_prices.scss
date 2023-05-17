@@ -1,0 +1,47 @@
+.prices {
+  margin-top: 5rem;
+  text-align: center;
+  &__ques {
+    font-family: $font-family-sans-serif;
+    color: $gray-600;
+  }
+  &__title {
+    color: $blue;
+  }
+  &__group {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    &__content {
+      width: 370px;
+      border: 1px solid $gray-400;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      g &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 3.3rem;
+        &__item {
+        }
+      }
+      &__title {
+        color: $blue;
+        align-self: center;
+      }
+      &__item {
+        font-family: $font-family-sans-serif;
+        color: $gray-600;
+      }
+      &__button {
+        padding: 0.7rem 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.portfolio {
+  text-align: center;
+  &__ques {
+    font-family: $font-family-sans-serif;
+    color: $gray-600;
+  }
+  &__title {
+    color: $blue;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+    margin: 0 auto;
+    &__item {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+.primary {
+  background-image: url("src/assets/imgs/folio-1.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}
+.secondary {
+  background-image: url("src/assets/imgs/folio-2.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}
+.tertiary {
+  background-image: url("src/assets/imgs/folio-3.jpg");
+  background-size: cover;
+  border-radius: 1%;
+}

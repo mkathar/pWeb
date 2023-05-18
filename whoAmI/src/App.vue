@@ -4,6 +4,9 @@
   <Services />
   <Portfolio />
   <Prices />
+  <Hireme />
+  <Testmonial />
+  <Blog />
 </template>
 
 <script>
@@ -12,11 +15,22 @@ import HeroSectionVue from "./components/heroSection.vue";
 import Services from "./components/services.vue";
 import Portfolio from "./components/portfolio.vue";
 import Prices from "./components/prices.vue";
-
+import Hireme from "./components/hireMe.vue";
+import Testmonial from "./components/testmonial.vue";
+import Blog from "./components/blog.vue";
 export default {
   data() {
     return {};
   },
-  components: { HeroSectionVue, About, Services, Portfolio, Prices },
+  components: {
+    HeroSectionVue,
+    About,
+    Services,
+    Portfolio,
+    Prices,
+    Hireme,
+    Testmonial,
+    Blog,
+  },
 };
 </script>

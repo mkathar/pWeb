@@ -1,0 +1,55 @@
+.blog {
+  width: 60%;
+  margin: 5rem auto;
+  text-align: center;
+  &__title {
+    color: $blue;
+  }
+  &__ques {
+    font-family: $font-family-sans-serif;
+    color: $gray-600;
+  }
+  &__content {
+    margin-top: 4rem;
+    border: 1px solid $gray-600;
+    text-align: left;
+    &__img {
+      height: 350px;
+      width: 350px;
+    }
+    &__paragraph {
+      &__group {
+        margin-left: 3rem;
+      }
+    }
+
+    display: flex;
+    &__group {
+      &__title {
+        margin-left: 3rem;
+        color: $blue;
+      }
+      &__response {
+        margin-left: 3rem;
+        display: flex;
+      }
+      &__response {
+        &__like {
+          margin: 0 1rem;
+          &__number {
+            margin: 0 0.2rem;
+          }
+        }
+        &__commit {
+          margin: 0 1rem;
+          &__number {
+            margin: 0 0.2rem;
+          }
+        }
+      }
+    }
+    &__link {
+      text-decoration: none;
+    }
+  }
+}

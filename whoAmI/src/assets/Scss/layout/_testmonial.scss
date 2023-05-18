@@ -1,0 +1,37 @@
+.Testmonial {
+  margin: 10rem 0;
+  text-align: center;
+  &__ques {
+    font-family: $font-family-sans-serif;
+    color: $gray-600;
+  }
+  &__title {
+    margin: 3rem 0rem;
+    color: $blue;
+  }
+  &__group {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+      width: 45%;
+      border: 1px solid $gray-600;
+
+      &__img {
+        border-radius: 100%;
+      }
+      &__disc {
+        margin: 0 2rem;
+        text-align: left;
+        font-family: $font-family-sans-serif;
+      }
+      &__name {
+        color: $blue;
+        margin: 1rem 2rem;
+        text-align: left;
+      }
+    }
+  }
+}

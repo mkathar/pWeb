@@ -358,6 +358,114 @@ g .prices__group__content__list {
   padding: 0.7rem 1rem;
 }
 
+.hireMe {
+  margin: 5rem 0;
+  background-color: #1e549f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hireMe__group__title {
+  color: #fff;
+}
+.hireMe__group__disc {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.hireMe__button {
+  width: 120px;
+  font-size: large;
+  height: 50px;
+  font-weight: 500;
+  font-family: "Baloo Paaji", cursive;
+  border-radius: 0.4rem;
+}
+
+.Testmonial {
+  margin: 10rem 0;
+  text-align: center;
+}
+.Testmonial__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.Testmonial__title {
+  margin: 3rem 0rem;
+  color: #1e549f;
+}
+.Testmonial__group {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.Testmonial__group__content {
+  width: 45%;
+  border: 1px solid #6c757d;
+}
+.Testmonial__group__content__img {
+  border-radius: 100%;
+}
+.Testmonial__group__content__disc {
+  margin: 0 2rem;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+}
+.Testmonial__group__content__name {
+  color: #1e549f;
+  margin: 1rem 2rem;
+  text-align: left;
+}
+
+.blog {
+  width: 60%;
+  margin: 5rem auto;
+  text-align: center;
+}
+.blog__title {
+  color: #1e549f;
+}
+.blog__ques {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.blog__content {
+  margin-top: 4rem;
+  border: 1px solid #6c757d;
+  text-align: left;
+  display: flex;
+}
+.blog__content__img {
+  height: 350px;
+  width: 350px;
+}
+.blog__content__paragraph__group {
+  margin-left: 3rem;
+}
+.blog__content__group__title {
+  margin-left: 3rem;
+  color: #1e549f;
+}
+.blog__content__group__response {
+  margin-left: 3rem;
+  display: flex;
+}
+.blog__content__group__response__like {
+  margin: 0 1rem;
+}
+.blog__content__group__response__like__number {
+  margin: 0 0.2rem;
+}
+.blog__content__group__response__commit {
+  margin: 0 1rem;
+}
+.blog__content__group__response__commit__number {
+  margin: 0 0.2rem;
+}
+.blog__content__link {
+  text-decoration: none;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1e549f;
@@ -373,5 +481,11 @@ g .prices__group__content__list {
 .btn-tertiary {
   color: #fff;
   background-color: #1e549f;
+  border: none;
+}
+
+.btn-quaternary {
+  color: #000;
+  background-color: #fff;
   border: none;
 }/*# sourceMappingURL=main.css.map */

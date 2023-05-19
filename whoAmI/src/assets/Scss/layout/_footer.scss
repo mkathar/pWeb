@@ -1,0 +1,16 @@
+.footer {
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $gray-600;
+  &__copyright {
+    font-family: $font-family-sans-serif;
+    color: $gray-600;
+  }
+  &__group {
+    &__ıcon {
+      margin: 0 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 0;
+  &__title {
+    color: $blue;
+  }
+  &__ques {
+    font-family: $font-family-sans-serif;
+  }
+  &__group {
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    &__input {
+      width: 45%;
+      height: 40px;
+    }
+  }
+  &__input {
+    margin: 3rem auto;
+    width: 39.6%;
+  }
+  &__button {
+    width: 150px;
+    height: 40px;
+    align-self: center;
+    border-radius: 5px;
+  }
+}

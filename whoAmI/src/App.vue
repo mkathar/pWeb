@@ -7,6 +7,8 @@
   <Hireme />
   <Testmonial />
   <Blog />
+  <Contact />
+  <Footer />
 </template>
 
 <script>
@@ -18,6 +20,8 @@ import Prices from "./components/prices.vue";
 import Hireme from "./components/hireMe.vue";
 import Testmonial from "./components/testmonial.vue";
 import Blog from "./components/blog.vue";
+import Contact from "./components/contact.vue";
+import Footer from "./components/footer.vue";
 export default {
   data() {
     return {};
@@ -31,6 +35,8 @@ export default {
     Hireme,
     Testmonial,
     Blog,
+    Contact,
+    Footer,
   },
 };
 </script>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 body {
   margin: 0;
@@ -464,6 +465,55 @@ g .prices__group__content__list {
 }
 .blog__content__link {
   text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 0;
+}
+.contact__title {
+  color: #1e549f;
+}
+.contact__ques {
+  font-family: "Open Sans", sans-serif;
+}
+.contact__group {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__group__input {
+  width: 45%;
+  height: 40px;
+}
+.contact__input {
+  margin: 3rem auto;
+  width: 39.6%;
+}
+.contact__button {
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #6c757d;
+}
+.footer__copyright {
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+.footer__group__ıcon {
+  margin: 0 0.5rem;
 }
 
 .btn-primary {

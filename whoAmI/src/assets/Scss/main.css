@@ -168,6 +168,7 @@ p {
 }
 
 .portfolio {
+  color: #1e549f;
   text-align: center;
 }
 .portfolio__ques {
@@ -184,8 +185,24 @@ p {
   margin: 0 auto;
 }
 .portfolio__group__item {
-  width: 350px;
+  width: 30%;
   height: 350px;
+}
+.portfolio__group__item__content {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.portfolio__group__item__content__title {
+  color: #1e549f;
+}
+.portfolio__group__item__content__text {
+  color: #1e549f;
+}
+.portfolio__group__item:hover .portfolio__group__item__content {
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.4117647059);
+  opacity: 1;
 }
 
 .primary {
@@ -215,6 +232,10 @@ p {
   top: 0;
   left: 0;
 }
+.header--unpinned {
+  opacity: 0;
+  transition: 1s;
+}
 .header__title {
   font-weight: 500;
   font-family: "Baloo Paaji", cursive;
@@ -233,16 +254,6 @@ p {
   color: #fff;
 }
 
-.hero {
-  background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("src/assets/imgs/header.jpg");
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 0;
-}
 .hero__up {
   font-family: "Baloo Paaji", cursive;
   font-weight: 700;
@@ -538,4 +549,72 @@ g .prices__group__content__list {
   color: #000;
   background-color: #fff;
   border: none;
+}
+
+#ChangeTheme {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+label {
+  display: block;
+  height: 15px;
+  width: 60px;
+  position: relative;
+}
+
+span.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  border-radius: 30px;
+}
+
+span.slide:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  top: -2px;
+  left: 0px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
+}
+
+#ChangeTheme:checked + span.slide:before {
+  transform: translatex(40px);
+}
+
+.dark {
+  background-color: #323133;
+}
+
+.hero {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 30%, rgb(50, 49, 51) 90%), url("src/assets/imgs/header.jpg");
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.light {
+  background-color: white;
+}
+
+.hero {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("src/assets/imgs/header.jpg");
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
 }/*# sourceMappingURL=main.css.map */

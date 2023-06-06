@@ -208,19 +208,19 @@ p {
 }
 
 .primary {
-  background-image: url("src/assets/imgs/folio-1.jpg");
+  background-image: url("https://drive.google.com/uc?export=view&id=1PjyHJo1yqiX8l2rQiVxYqQcXYQF9iYMT");
   background-size: cover;
   border-radius: 1%;
 }
 
 .secondary {
-  background-image: url("src/assets/imgs/folio-2.jpg");
+  background-image: url("https://drive.google.com/uc?export=view&id=13x4zHECQTNCmbh1gg4feKTkC5O9TQ2iv");
   background-size: cover;
   border-radius: 1%;
 }
 
 .tertiary {
-  background-image: url("src/assets/imgs/folio-3.jpg");
+  background-image: url("https://drive.google.com/uc?export=view&id=18wmJDmLBae5YdTz879MGNqoY4NtaeC_V");
   background-size: cover;
   border-radius: 1%;
 }

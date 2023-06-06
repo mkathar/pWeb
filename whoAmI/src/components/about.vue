@@ -1,6 +1,10 @@
 <template>
   <div class="about">
-    <img class="about__img" src="src/assets/imgs/man.png" alt="" />
+    <img
+      class="about__img"
+      src="https://avatars.githubusercontent.com/u/109306011?s=400&u=92a2020b2ea62d8797e6e3dda489263af5ac021a&v=4"
+      alt="selam"
+    />
     <div class="about__content">
       <span class="about__content__ques">Who am I ?</span>
       <h1 class="about__content__title">About Me</h1>
@@ -15,6 +19,7 @@
         voluptatum expedita aliquid! Debitis, nam!
       </p>
       <button class="about__content__btn btn-secondary">Download CV</button>
+      <img src="" alt="" />
     </div>
   </div>
 </template>

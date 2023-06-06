@@ -203,7 +203,7 @@ const responsiveIcon = ({ size }) => {
     </svg>
   );
 };
-const scooterIcon = ({ size }) => {
+const scooterIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -215,8 +215,8 @@ const scooterIcon = ({ size }) => {
       viewBox="0 0 458.745 458.745"
       style="enable-background:new 0 0 458.745 458.745;"
       xml:space="preserve"
-      width={size}
-      height={size}
+      width="70"
+      height="70"
     >
       <g>
         <g>

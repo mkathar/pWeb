@@ -3,9 +3,12 @@
   align-items: center;
   width: 80%;
   margin: 0 auto;
+
   &__img {
-    width: 370px;
-    height: 370px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-right: 3rem;
   }
   &__content {
     &__ques {

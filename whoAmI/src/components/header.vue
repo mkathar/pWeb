@@ -24,6 +24,7 @@
         </label>
       </li>
     </ul>
+    <button @click="degis">selam</button>
   </header>
 </template>
 
@@ -52,6 +53,9 @@ export default {
 
       this.lastPosition = window.scrollY;
     },
+    degis() {
+      document.documentElement.classList.add("dark");
+    },
     dark() {
       if (this.checked == true) {
         console.log(this.checked);
@@ -70,3 +74,5 @@ export default {
   },
 };
 </script>
+
+<style lng="scss"></style>

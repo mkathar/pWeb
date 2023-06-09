@@ -1,12 +1,9 @@
-.dark {
-  background-color: #323133;
-}
-.hero {
+.dark-hero {
   background-size: cover;
   background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.05) 30%,
-      rgba(50, 49, 51, 1) 90%
+      rgba(165, 164, 164, 1) 40%,
+      rgba(50, 49, 51, 1) 100%
     ),
     url("https://drive.google.com/file/d/1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH/view?usp=drive_link");
   height: fit-content;
@@ -15,4 +12,8 @@
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
+}
+
+.dark {
+  background-color: #323133;
 }

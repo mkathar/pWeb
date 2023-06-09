@@ -55,10 +55,14 @@ export default {
     dark() {
       if (this.checked == true) {
         console.log(this.checked);
-        document.body.className = "dark";
+        document.body.classList.toggle("dark");
+        const hero = document.querySelector(".hero");
+        hero.classList = "dark-hero";
       } else {
         console.log(this.checked);
-        document.body.className = "light";
+        document.body.classList = "";
+        const hero = document.querySelector(".dark-hero");
+        hero.classList = "hero";
       }
     },
   },

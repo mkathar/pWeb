@@ -141,7 +141,8 @@ p {
 .about {
   display: flex;
   align-items: center;
-  width: 80%;
+  justify-content: center;
+  padding: 0 20%;
   margin: 0 auto;
 }
 .about__img {
@@ -194,9 +195,14 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
+  padding-top: 2rem;
 }
 .portfolio__group__item__content__title {
   color: #1e549f;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Baloo Paaji", cursive;
+  font-size: 32px;
 }
 .portfolio__group__item__content__text {
   color: #1e549f;
@@ -256,6 +262,17 @@ p {
   color: #fff;
 }
 
+.hero {
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://drive.google.com/uc?export=view&id=1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH");
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
 .hero__up {
   font-family: "Baloo Paaji", cursive;
   font-weight: 700;
@@ -312,19 +329,52 @@ p {
   align-items: center;
   border: 1px solid gray;
 }
-.service__group__item__text {
+.service__group__item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.service__group__item__content__text {
   margin: 0.8rem 0;
   font-family: "Open Sans", sans-serif;
   color: #1e549f;
   font-weight: 900;
 }
-.service__group__item:hover {
+.service__group__item__content__hide {
+  bottom: -50px;
+  opacity: 0;
+  margin: 0;
+}
+.service__group__item__content__hide__text {
+  font-family: "Open Sans", sans-serif;
+  color: #1e549f;
+  font-weight: 400;
+  font-size: 12px;
+}
+.service__group__item:hover .service__group__item__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid gray;
-  transform: translateY(-155px);
+  position: relative;
+  top: 20px;
+  transform: translateY(-25px) scale(0.7);
   transition: 1.5s;
+}
+.service__group__item:hover .service__group__item__content__text {
+  transition: 1.5s;
+  margin: 0.1rem 0;
+  font-family: "Open Sans", sans-serif;
+  color: #1e549f;
+  font-weight: 900;
+}
+.service__group__item:hover .service__group__item__content__hide {
+  transform: translateY(-20px) scale(1.1);
+  opacity: 1;
+  transition: 1.5s;
+  margin: 0;
 }
 
 .prices {
@@ -591,32 +641,17 @@ span.slide:before {
   transform: translatex(40px);
 }
 
+.dark-hero {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgb(165, 164, 164) 40%, rgb(50, 49, 51) 100%), url("https://drive.google.com/file/d/1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH/view?usp=drive_link");
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
 .dark {
   background-color: #323133;
-}
-
-.hero {
-  background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 30%, rgb(50, 49, 51) 90%), url("https://drive.google.com/file/d/1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH/view?usp=drive_link");
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 0;
-}
-
-.light {
-  background-color: white;
-}
-
-.hero {
-  background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://drive.google.com/uc?export=view&id=1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH");
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 0;
 }/*# sourceMappingURL=main.css.map */

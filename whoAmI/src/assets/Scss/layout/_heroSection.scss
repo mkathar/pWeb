@@ -1,4 +1,18 @@
 .hero {
+  // background-color: #323133;
+  background-color: $light;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 80%,
+      rgba(255, 255, 255, 1) 90%
+    ),
+    url("https://drive.google.com/uc?export=view&id=1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH");
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
   &__up {
     font-family: "Baloo Paaji", cursive;
     font-weight: 700;

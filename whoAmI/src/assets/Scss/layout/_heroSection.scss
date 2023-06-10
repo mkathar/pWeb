@@ -24,6 +24,7 @@
     font-weight: 700;
     color: $gray-800;
     font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    line-height: calc(50px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   }
 
   &__bot {
@@ -32,16 +33,19 @@
     color: $gray-800;
     letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
     font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
-    margin-bottom: 3rem;
+    margin: 3rem 0;
   }
   &__btn {
+    font-family: "Baloo Paaji", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 150px;
     padding: 0.5rem 0;
     margin: 0 auto;
     border-radius: 1rem;
     border: 3px solid;
+    letter-spacing: 1px;
+    cursor: pointer;
   }
 }

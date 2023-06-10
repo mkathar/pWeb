@@ -143,7 +143,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0 20%;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 .about__img {
   width: 250px;
@@ -166,13 +166,14 @@ p {
   padding: 0.6rem 0;
   margin: 1rem auto;
   border-radius: 1rem;
-  border: solid 1px;
+  border: solid 1.5px;
   justify-self: left;
 }
 
 .portfolio {
   color: #1e549f;
   text-align: center;
+  margin: 5rem 0;
 }
 .portfolio__ques {
   font-family: "Open Sans", sans-serif;
@@ -244,22 +245,27 @@ p {
   opacity: 0;
   transition: 1s;
 }
-.header__title {
+.header__group {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.header__group__title {
   font-weight: 500;
   font-family: "Baloo Paaji", cursive;
   color: #fff;
 }
-.header__list {
+.header__group__list {
   display: flex;
   list-style-type: none;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
+  color: #fff;
 }
-.header__list--item {
+.header__group__list--item {
   font-weight: 500;
   font-family: "Baloo Paaji", cursive;
-  color: #fff;
 }
 
 .hero {
@@ -284,6 +290,7 @@ p {
   font-weight: 700;
   color: #393e46;
   font-size: calc(30px + 30 * (100vw - 300px) / 1000);
+  line-height: calc(50px + 30 * (100vw - 300px) / 1000);
 }
 .hero__bot {
   font-family: "Open Sans", sans-serif;
@@ -291,17 +298,20 @@ p {
   color: #393e46;
   letter-spacing: calc(1px + 6 * (100vw - 300px) / 1000);
   font-size: calc(10px + 12 * (100vw - 300px) / 1000);
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 .hero__btn {
+  font-family: "Baloo Paaji", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 150px;
   padding: 0.5rem 0;
   margin: 0 auto;
   border-radius: 1rem;
   border: 3px solid;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .service {
@@ -401,25 +411,25 @@ p {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
 }
-g .prices__group__content__list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  margin-left: 3.3rem;
+.prices__group__content__title {
+  margin-bottom: 0rem;
 }
 .prices__group__content__title {
   color: #1e549f;
   align-self: center;
 }
+.prices__group__content__icon {
+  margin-bottom: 1rem;
+}
 .prices__group__content__item {
   font-family: "Open Sans", sans-serif;
   color: #6c757d;
+  margin: 0.3rem;
 }
 .prices__group__content__button {
   padding: 0.7rem 1rem;
+  margin: 1rem auto;
 }
 
 .hireMe {
@@ -434,6 +444,7 @@ g .prices__group__content__list {
 }
 .hireMe__group__disc {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   color: #fff;
 }
 .hireMe__button {

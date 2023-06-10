@@ -4,26 +4,27 @@
     v-on="handleScroll"
     class="header"
   >
-    <h1 class="header__title">KATHAR</h1>
-    <ul class="header__list">
-      <li class="header__list--item">Home</li>
-      <li class="header__list--item">About</li>
-      <li class="header__list--item">Portfolio</li>
-      <li class="header__list--item">Testmonial</li>
-      <li class="header__list--item">Blog</li>
-      <li class="header__list--item">Contact</li>
-      <li class="header__list--item">
-        <label for="ChangeTheme">
-          <input
-            @change="dark"
-            v-model="checked"
-            type="checkbox"
-            id="ChangeTheme"
-          />
-          <span class="slide"></span>
-        </label>
-      </li>
-    </ul>
+    <div class="header__group">
+      <h1 class="header__group__title">KATHAR</h1>
+      <ul class="header__group__list">
+        <li class="header__group__list--item">Home</li>
+        <li class="header__group__list--item">About</li>
+        <li class="header__group__list--item">Portfolio</li>
+        <li class="header__group__list--item">Testmonial</li>
+        <li class="header__group__list--item">Blog</li>
+        <li class="header__group__list--item">Contact</li>
+        <li class="header__group__list--item"></li>
+      </ul>
+    </div>
+    <label for="ChangeTheme">
+      <input
+        @change="dark"
+        v-model="checked"
+        type="checkbox"
+        id="ChangeTheme"
+      />
+      <span class="slide"></span>
+    </label>
   </header>
 </template>
 
@@ -31,7 +32,7 @@
 export default {
   data() {
     return {
-      checked: null,
+      checked: false,
       limitPosition: 500,
       scrolled: false,
       lastPosition: 0,
@@ -44,10 +45,30 @@ export default {
         this.limitPosition < window.scrollY
       ) {
         this.scrolled = true;
+        const title = document.querySelector(".header__group__title");
+        title.style.color = "#1e549f";
+        const list = document.querySelector(".header__group__list");
+        list.style.color = "#1e549f";
       }
 
       if (this.lastPosition > window.scrollY) {
         this.scrolled = false;
+        const title = document.querySelector(".header__group__title");
+        title.style.color = "#fff";
+        const list = document.querySelector(".header__group__list");
+        list.style.color = "#fff";
+      }
+
+      if (this.lastPosition > 500 && this.checked == false) {
+        const title = document.querySelector(".header__group__title");
+        title.style.color = "#1e549f";
+        const list = document.querySelector(".header__group__list");
+        list.style.color = "#1e549f";
+      } else {
+        const title = document.querySelector(".header__group__title");
+        title.style.color = "#fff";
+        const list = document.querySelector(".header__group__list");
+        list.style.color = "#fff";
       }
 
       this.lastPosition = window.scrollY;

@@ -21,26 +21,26 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
-      row-gap: 1.5rem;
-      g &__list {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        margin-left: 3.3rem;
-        &__item {
-        }
+
+      &__title {
+        margin-bottom: 0rem;
       }
+
       &__title {
         color: $blue;
         align-self: center;
       }
+      &__icon {
+        margin-bottom: 1rem;
+      }
       &__item {
         font-family: $font-family-sans-serif;
         color: $gray-600;
+        margin: 0.3rem;
       }
       &__button {
         padding: 0.7rem 1rem;
+        margin: 1rem auto;
       }
     }
   }

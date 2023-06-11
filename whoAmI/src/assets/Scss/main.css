@@ -7,12 +7,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #695aa6;
+  background: #1e549f;
   color: white;
 }
 
 ::selection {
-  background: #695aa6;
+  background: #1e549f;
   color: white;
 }
 
@@ -477,6 +477,7 @@ p {
 .Testmonial__group__content {
   width: 45%;
   border: 1px solid #6c757d;
+  padding-top: 1rem;
 }
 .Testmonial__group__content__img {
   border-radius: 100%;
@@ -665,4 +666,154 @@ span.slide:before {
 
 .dark {
   background-color: #323133;
+}
+
+@media only screen and (max-width: 810px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .about__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 0;
+  }
+  .service {
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  .service__ques {
+    font-family: "Open Sans", sans-serif;
+    color: #6c757d;
+  }
+  .service__title {
+    color: #1e549f;
+  }
+  .service__group {
+    justify-content: space-around;
+    display: flex;
+  }
+  .service__group__item {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  .service__group__item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+  }
+  .service__group__item__content__text {
+    margin: 0.8rem 0;
+    font-family: "Open Sans", sans-serif;
+    color: #1e549f;
+    font-weight: 900;
+  }
+  .service__group__item__content__hide {
+    bottom: -50px;
+    opacity: 0;
+    margin: 0;
+  }
+  .service__group__item__content__hide__text {
+    font-family: "Open Sans", sans-serif;
+    color: #1e549f;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .portfolio {
+    color: #1e549f;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .portfolio__ques {
+    font-family: "Open Sans", sans-serif;
+    color: #6c757d;
+  }
+  .portfolio__title {
+    color: #1e549f;
+  }
+  .portfolio__group__item {
+    width: 30%;
+    height: 250px;
+  }
+  .portfolio__group__item__content {
+    opacity: 0;
+    height: 250px;
+  }
+  .portfolio__group__item__content__title {
+    color: #1e549f;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Baloo Paaji", cursive;
+    font-size: 16px;
+  }
+  .portfolio__group__item__content__text {
+    color: #1e549f;
+    font-size: 14px;
+  }
+  .portfolio__group__item:hover .portfolio__group__item__content {
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.4117647059);
+    opacity: 1;
+  }
+  .hireMe__group__title {
+    color: #fff;
+    font-size: 24px;
+  }
+  .hireMe__group__disc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+  }
+  .hireMe__button {
+    width: 120px;
+    font-size: large;
+    height: 50px;
+    font-weight: 500;
+    font-family: "Baloo Paaji", cursive;
+    border-radius: 0.4rem;
+  }
+  .Testmonial__group {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .Testmonial__group__content {
+    border: 1px solid #6c757d;
+    width: 100%;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 1rem 0 1rem 0.5rem;
+  }
+  .Testmonial__group__content__img {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+  }
+  .Testmonial__group__content__disc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    width: 60%;
+    margin: 0 0 0 0.5rem;
+  }
+  .Testmonial__group__content__name {
+    margin: 0 0.5rem 0 0;
+    color: #1e549f;
+  }
 }/*# sourceMappingURL=main.css.map */

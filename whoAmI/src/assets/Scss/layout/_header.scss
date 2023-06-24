@@ -1,4 +1,11 @@
 .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   &--unpinned {
     opacity: 0;
     transition: 1s;
@@ -24,11 +31,4 @@
       }
     }
   }
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
 }

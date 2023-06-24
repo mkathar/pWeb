@@ -19,7 +19,6 @@
         voluptatum expedita aliquid! Debitis, nam!
       </p>
       <button class="about__content__btn btn-secondary">Download CV</button>
-      <img src="" alt="" />
     </div>
   </div>
 </template>

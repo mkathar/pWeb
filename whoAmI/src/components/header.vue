@@ -13,10 +13,9 @@
         <li class="header__group__list--item">Testmonial</li>
         <li class="header__group__list--item">Blog</li>
         <li class="header__group__list--item">Contact</li>
-        <li class="header__group__list--item"></li>
       </ul>
     </div>
-    <label for="ChangeTheme">
+    <label class="header__theme" for="ChangeTheme">
       <input
         @change="dark"
         v-model="checked"
@@ -25,6 +24,30 @@
       />
       <span class="slide"></span>
     </label>
+    <div class="header__menuToggle">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul class="header__menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Portfolio</li></a>
+        <a href="#"><li>Blog</li></a>
+        <a href="#"><li>Contact</li></a>
+        <label class="header__theme__hamburger" for="ChangeTheme">
+          <input
+            @change="dark"
+            v-model="checked"
+            type="checkbox"
+            id="ChangeTheme"
+          />
+          <span class="slide"></span>
+        </label>
+      </ul>
+    </div>
   </header>
 </template>
 

@@ -1,5 +1,5 @@
 .blog {
-  width: 60%;
+  width: 70%;
   margin: 5rem auto;
   text-align: center;
   &__title {
@@ -14,8 +14,8 @@
     border: 1px solid $gray-600;
     text-align: left;
     &__img {
-      height: 350px;
       width: 350px;
+      height: 350px;
     }
     &__paragraph {
       &__group {

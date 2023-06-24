@@ -1,0 +1,545 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint == portrait {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large-desktop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@include devices(portrait) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &__img {
+      margin: 1rem !important;
+    }
+  }
+  .service {
+    width: 90%;
+
+    &__group {
+      justify-content: space-around;
+      display: flex;
+
+      &__item {
+        &__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: 40px;
+          &__text {
+            margin: 0.8rem 0;
+            font-family: $font-family-sans-serif;
+            color: $blue;
+            font-weight: 900;
+          }
+          &__hide {
+            bottom: -50px;
+            opacity: 0;
+            margin: 0;
+            &__text {
+              font-family: $font-family-sans-serif;
+              color: $blue;
+              font-weight: 400;
+              font-size: 10px;
+            }
+          }
+        }
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid gray;
+      }
+    }
+  }
+
+  .portfolio {
+    &__group {
+      width: 80% !important;
+      &__item {
+        width: 30%;
+        height: 250px;
+
+        &__content {
+          opacity: 0;
+          height: 250px;
+
+          &__title {
+            font-size: 22px !important;
+          }
+          &__text {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .prices {
+    &__group {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-around;
+
+      &__content {
+        width: 370px;
+
+        &__title {
+          color: $blue;
+          align-self: center;
+          font-size: 22px !important;
+        }
+        &__icon {
+          margin-bottom: 1rem;
+        }
+        &__item {
+          font-size: 14px !important;
+        }
+        &__button {
+          padding: 0.7rem 1rem;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+
+  .hireMe {
+    &__group {
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &__button {
+      min-width: 70px;
+      width: 20% !important;
+    }
+  }
+  .Testmonial {
+    &__group {
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+      &__content {
+        border: 1px solid $gray-600;
+        width: 100% !important;
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        padding: 1rem 0 1rem 0.5rem;
+
+        &__img {
+          border-radius: 100%;
+          width: 70px;
+          height: 70px;
+        }
+        &__disc {
+          font-family: $font-family-sans-serif;
+          font-size: 10px;
+          width: 60%;
+          margin: 0 0 0 0.5rem;
+        }
+        &__name {
+          margin: 0 0.5rem 0 0;
+          color: $blue;
+        }
+      }
+    }
+  }
+  .blog {
+    width: 90% !important;
+    margin: 2rem auto;
+
+    &__content {
+      display: flex !important;
+      flex-direction: column;
+      padding: 1rem 0;
+
+      &__img {
+        height: 200px !important;
+        width: 100% !important;
+        filter: blur(2px);
+      }
+      &__paragraph {
+        &__group {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include devices(tablet) {
+  .header {
+    &__theme__hamburger {
+      display: block !important;
+    }
+    &__theme {
+      display: none;
+    }
+    &__group {
+      &__list {
+        display: none !important;
+      }
+    }
+    &__menuToggle {
+      display: block !important;
+    }
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &__img {
+      margin: 1rem !important;
+    }
+  }
+  .service {
+    width: 90%;
+
+    &__group {
+      justify-content: space-around;
+      display: flex;
+
+      &__item {
+        &__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: 40px;
+          &__text {
+            margin: 0.8rem 0;
+            font-family: $font-family-sans-serif;
+            color: $blue;
+            font-weight: 900;
+          }
+          &__hide {
+            bottom: -50px;
+            opacity: 0;
+            margin: 0;
+            &__text {
+              font-family: $font-family-sans-serif;
+              color: $blue;
+              font-weight: 400;
+              font-size: 10px;
+            }
+          }
+        }
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid gray;
+      }
+    }
+  }
+
+  .portfolio {
+    &__group {
+      width: 80% !important;
+      &__item {
+        width: 30%;
+        height: 250px;
+
+        &__content {
+          opacity: 0;
+          height: 250px;
+
+          &__title {
+            font-size: 22px !important;
+          }
+          &__text {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .prices {
+    &__group {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-around;
+
+      &__content {
+        width: 370px;
+
+        &__title {
+          color: $blue;
+          align-self: center;
+          font-size: 22px !important;
+        }
+        &__icon {
+          margin-bottom: 1rem;
+        }
+        &__item {
+          font-size: 14px !important;
+        }
+        &__button {
+          padding: 0.7rem 1rem;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+
+  .hireMe {
+    &__group {
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &__button {
+      min-width: 70px;
+      width: 20% !important;
+    }
+  }
+  .Testmonial {
+    &__group {
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+      &__content {
+        border: 1px solid $gray-600;
+        width: 100% !important;
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        padding: 1rem 0 1rem 0.5rem;
+
+        &__img {
+          border-radius: 100%;
+          width: 70px;
+          height: 70px;
+        }
+        &__disc {
+          font-family: $font-family-sans-serif;
+          font-size: 10px;
+          width: 60%;
+          margin: 0 0 0 0.5rem;
+        }
+        &__name {
+          margin: 0 0.5rem 0 0;
+          color: $blue;
+        }
+      }
+    }
+  }
+  .blog {
+    width: 90% !important;
+    margin: 2rem auto;
+
+    &__content {
+      display: flex !important;
+      flex-direction: column;
+      padding: 1rem 0;
+
+      &__img {
+        height: 200px !important;
+        width: 100% !important;
+        filter: blur(2px);
+      }
+      &__paragraph {
+        &__group {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include devices(desktop) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &__img {
+      margin: 1rem !important;
+    }
+  }
+  .service {
+    width: 90%;
+
+    &__group {
+      justify-content: space-around;
+      display: flex;
+
+      &__item {
+        &__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: 40px;
+          &__text {
+            margin: 0.8rem 0;
+            font-family: $font-family-sans-serif;
+            color: $blue;
+            font-weight: 900;
+          }
+          &__hide {
+            bottom: -50px;
+            opacity: 0;
+            margin: 0;
+            &__text {
+              font-family: $font-family-sans-serif;
+              color: $blue;
+              font-weight: 400;
+              font-size: 10px;
+            }
+          }
+        }
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid gray;
+      }
+    }
+  }
+
+  .portfolio {
+    &__group {
+      width: 80% !important;
+      &__item {
+        width: 30%;
+        height: 250px;
+
+        &__content {
+          opacity: 0;
+          height: 250px;
+
+          &__title {
+            font-size: 22px !important;
+          }
+          &__text {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .prices {
+    &__group {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-around;
+
+      &__content {
+        width: 370px;
+
+        &__title {
+          color: $blue;
+          align-self: center;
+          font-size: 22px !important;
+        }
+        &__icon {
+          margin-bottom: 1rem;
+        }
+        &__item {
+          font-size: 14px !important;
+        }
+        &__button {
+          padding: 0.7rem 1rem;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+
+  .hireMe {
+    &__group {
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &__button {
+      min-width: 70px;
+      width: 20% !important;
+    }
+  }
+  .Testmonial {
+    &__group {
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+      &__content {
+        border: 1px solid $gray-600;
+        width: 100% !important;
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        padding: 1rem 0 1rem 0.5rem;
+
+        &__img {
+          border-radius: 100%;
+          width: 70px;
+          height: 70px;
+        }
+        &__disc {
+          font-family: $font-family-sans-serif;
+          font-size: 10px;
+          width: 60%;
+          margin: 0 0 0 0.5rem;
+        }
+        &__name {
+          margin: 0 0.5rem 0 0;
+          color: $blue;
+        }
+      }
+    }
+  }
+  .blog {
+    width: 90% !important;
+    margin: 2rem auto;
+  }
+}

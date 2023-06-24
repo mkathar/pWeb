@@ -661,13 +661,13 @@ p {
 }
 
 .primary {
-  background-image: url("https://drive.google.com/uc?export=view&id=1PjyHJo1yqiX8l2rQiVxYqQcXYQF9iYMT");
+  background-image: url("https://drive.google.com/uc?export=view&id=1mCrHXiZCHvdcHdQn3qgNiGJbbgTKmF46");
   background-size: cover;
   border-radius: 1%;
 }
 
 .secondary {
-  background-image: url("https://drive.google.com/uc?export=view&id=13x4zHECQTNCmbh1gg4feKTkC5O9TQ2iv");
+  background-image: url("https://drive.google.com/uc?export=view&id=12nXmi2Q3kmrcc-iR1DVsP7W-3pIDCoif");
   background-size: cover;
   border-radius: 1%;
 }
@@ -712,12 +712,13 @@ p {
 .header__group__list--item {
   font-weight: 500;
   font-family: "Baloo Paaji", cursive;
+  cursor: pointer;
 }
 
 .hero {
   background-color: #f8f9fa;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://drive.google.com/uc?export=view&id=1ITyTtiPOhtZ8mOx9v3EmWyY6eJOdSCqH");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/header.jpg ");
   height: -moz-fit-content;
   height: fit-content;
   text-align: center;

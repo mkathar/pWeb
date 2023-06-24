@@ -661,13 +661,13 @@ p {
 }
 
 .primary {
-  background-image: url("https://drive.google.com/uc?export=view&id=1mCrHXiZCHvdcHdQn3qgNiGJbbgTKmF46");
+  background-image: url("https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/Spotify-img.webp");
   background-size: cover;
   border-radius: 1%;
 }
 
 .secondary {
-  background-image: url("https://drive.google.com/uc?export=view&id=12nXmi2Q3kmrcc-iR1DVsP7W-3pIDCoif");
+  background-image: url("https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/Netflix-img.webp");
   background-size: cover;
   border-radius: 1%;
 }
@@ -718,7 +718,7 @@ p {
 .hero {
   background-color: #f8f9fa;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/header.jpg ");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 80%, rgb(255, 255, 255) 90%), url("https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/Header-img.webp");
   height: -moz-fit-content;
   height: fit-content;
   text-align: center;

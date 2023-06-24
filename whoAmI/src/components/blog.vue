@@ -5,7 +5,7 @@
     <div class="blog__content">
       <img
         class="blog__content__img"
-        src="https://picsum.photos/id/237/350/350"
+        src="https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/237-350x350.webp"
         alt=""
       />
 
@@ -54,7 +54,7 @@
     <div class="blog__content">
       <img
         class="blog__content__img"
-        src="https://picsum.photos/id/237/350/350"
+        src="https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/237-350x350.webp"
         alt=""
       />
 

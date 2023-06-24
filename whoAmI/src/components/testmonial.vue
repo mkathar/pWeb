@@ -6,7 +6,7 @@
       <div class="Testmonial__group__content">
         <img
           class="Testmonial__group__content__img"
-          src="https://picsum.photos/id/2/90/90"
+          src="https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/2-90x90.webp"
           alt=""
         />
         <p class="Testmonial__group__content__disc">
@@ -19,7 +19,7 @@
       <div class="Testmonial__group__content">
         <img
           class="Testmonial__group__content__img"
-          src="https://picsum.photos/id/1/90/90"
+          src="https://raw.githubusercontent.com/mkathar/pWeb/main/whoAmI/src/assets/imgs/1-90x90.webp"
           alt=""
         />
         <p class="Testmonial__group__content__disc">

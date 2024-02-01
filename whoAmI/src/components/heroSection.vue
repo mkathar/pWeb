@@ -5,7 +5,7 @@
     <span class="hero__mid">I am Muhammed</span>
     <span class="hero__mid">KATAR</span>
 
-    <span class="hero__bot">JR FRONTEND DEVELOPER</span>
+    <span class="hero__bot">FRONTEND DEVELOPER</span>
     <button class="hero__btn btn-primary" @click="goGithub">
       Visit My Works
     </button>
